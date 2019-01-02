@@ -25,13 +25,23 @@
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Poppins|Titan+One" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
-  <!-- =======================================================
-    Template Name: Flatty
-    Template URL: https://templatemag.com/flatty-bootstrap-app-landing-page-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
 </head>
 
 <body>
@@ -39,43 +49,88 @@
   <!-- Fixed navbar -->
   <div class="navbar navbar-default navbar-fixed-top">
     <div class="container">
-    <br><br><br>
+    <br><br>
         <div style="text-align: center;"><p style="font-family: 'Titan One', cursive; font-size: 46px;" >noddla</p></div>
       </div>
     
       <!--/.nav-collapse -->
-    </div><br><br><br>
+    </div>
   </div>
 
   <div id="headerwrap">
     <div class="container">
       <div class="row">
         <div class="col-xs-12 col-lg-6">
-        <div style="text-align: center;">
+        <div style="text-align: center" id="maintext">
           <h2><b>Can delta waves<br/>
 					really relax your brain?</b></h2>
+
+
+					<div class="full-text">
+
          <p>Find out with NODDLA, a web app/instrument that allows you create melodies on your laptop, while absorbing the 2.5hz binaural beats underneath. This "delta" frequency is associated with deep sleep, as well as improved memory, recovery, and pain control. </p>
-         <p> The concept of binaural beats(discovered in 1839 by Heineich Wilhem Dove) is based on an auditory illusion, created when an individual hears two seperate soundwaves through headphones, and the brain then 'hears' a third soundwave based on the difference between the two waves. Manipulation of this third soundwave's frequency results in the binaural beat effect-which has been studied extensively for centuries.  Noddla is a product of that voluminous body of research. Enjoy. </p><p> NODDLA: The Ultimate Lullabye Experience.</p>
+         <p> The concept of binaural beats is based on an auditory illusion, created when an individual hears two seperate soundwaves through headphones (one soundwave through each ear) and the brain subsequently percieves a third soundwave based on the mathematical difference between the two waves & proceeds to "follow" that soundwave. Binaural beats were first discovered in 1839 by Heineich Wilhem Dove.</p><p> NODDLA: The Ultimate Lullabye Experience.</p>
+
 
 
             <div>Go ahead. Try it, it's free!</div><br>
                     <div style="text-align: center;">
-			   <a href="https://noddlabasic.herokuapp.com/"> <button type="button" class="btn btn-warning btn-lg ">TRY NODDLA NOW</button></a>
+          <button type="button" class="btn btn-warning btn-lg ">TRY NODDLA NOW</button>
 </div>
 <br>
-            <p style="color: navy"><b>P.S.  ...to use Noddla, you'll need a laptop (or desktop) to play on, & headphones (or earbuds) to listen through. Mobile users can use one of <span style="color:white";><a href="https://amzn.to/2VnhSql" >these.</a></span></b></p>
+            <p style="color: navy"><b>P.S.  ...to use Noddla, you'll need a laptop (or desktop) to play on, & headphones (or earbuds) to listen through...</b></p>
           
 
-            <p>a <span style="font-family: 'Righteous', cursive; font-size: 46px; color: #2f3dfa;"><a href="https://pivotalinstruments.ga/">PAI</a></span>product</p> 
-   </div><br>
+            <p>a <span style="font-family: 'Righteous', cursive; font-size: 46px; color: #2f3dfa;"><a href="https://pivotalinstruments.ga/"><a>PAI</a></span>product</p> 
+   <br>
+<p style="text-align: center;">Legal Disclaimer: In accordance with US law, Noddla does not claim to diagnose, treat, or cure any medical disease, illness, or condition.
+</p>
+          </div></div>
+
+
+
+
+
+
+
+
+ <div class="short-text" >
+  <p>Find out with NODDLA, a web app/instrument that allows you create melodies on your laptop, while absorbing the 2.5hz binaural beats underneath. <button data-toggle="collapse" class="btn btn-primary " data-target="#content">EXPAND</button>
+<div id= 'content' class='collapse'>
+<p>Find out with NODDLA, a web app/instrument that allows you create melodies on your laptop, while absorbing the 2.5hz binaural beats underneath. This "delta" frequency is associated with deep sleep, as well as improved memory, recovery, and pain control. </p>
+         <p> The concept of binaural beats is based on an auditory illusion, created when an individual hears two seperate soundwaves through headphones (one soundwave through each ear) and the brain subsequently percieves a third soundwave based on the mathematical difference between the two waves & proceeds to "follow" that soundwave. Binaural beats were first discovered in 1839 by Heineich Wilhem Dove.</p><p> NODDLA: The Ultimate Lullabye Experience.</p>
+
+
+
+            <div>Go ahead. Try it, it's free!</div><br>
+                    <div style="text-align: center;">
+          <button type="button" class="btn btn-warning btn-lg ">TRY NODDLA NOW</button>
+</div>
+<br>
+            <p style="color: navy"><b>P.S.  ...to use Noddla, you'll need a laptop (or desktop) to play on, & headphones (or earbuds) to listen through...</b></p>
+          
+
+            <p>a <span style="font-family: 'Righteous', cursive; font-size: 46px; color: #2f3dfa;"><a href="https://pivotalinstruments.ga/"><a>PAI</a></span>product</p> 
+   <br>
 <p style="text-align: center;">Legal Disclaimer: In accordance with US law, Noddla does not claim to diagnose, treat, or cure any medical disease, illness, or condition.
 </p>
 
+
+
+
+
+
+</div>
+
+
+
+</p>
+ </div>
         <!-- /col-lg-6 -->
 
       </div>
        <div class="col-xs-12 col-lg-6">
-          <img class="img-responsive" src="img/brain.png" alt="" >
+          <img class="img-responsive" src="img/brain.png" alt="" width="80%" >
         </div>
       <!-- /row -->
     </div>
@@ -101,7 +156,7 @@
   <div id="copyrights">
     <div class="container">
       <p>
-        &copy; Copyright 2019 PIVOTAL AUDIO INSTRUMENTS & KWILL SOFTWARE. All Rights Reserved
+        &copy; Copyright 2018 <strong>KWILLSOFTWARE.COM</strong>. All Rights Reserved
       </p>
       <div class="credits">
     
@@ -118,6 +173,7 @@
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+
   
 
 </body>
