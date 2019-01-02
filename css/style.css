@@ -5,6 +5,12 @@
 * License: https://templatemag.com/license/
 */
 
+.short-text { display: none; }
+
+@media (max-width: 1200px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
 body {
   background-color: #f2f2f2;
   font-family: 'Raleway', sans-serif;
